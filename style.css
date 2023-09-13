@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 * {
     margin: 0;
+    font-family: 'Poppins, sans-serif';
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-
 }
+
 section {
     position: relative;
     width: 100%;
@@ -21,15 +22,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px  100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h2 {
-    font-family: 'Kaushan Script', cursive;
-}
 header .logo {
     position: relative;
     max-width: 80px;
@@ -48,7 +46,7 @@ header ul li a {
     display: inline-block;
     color: #333;
     font-weight: 400;
-    margin-left: 40px;
+    margin-left: 50px;
     text-decoration: none;
 }
 
@@ -60,66 +58,57 @@ header ul li a {
     align-items: center;
 }
 
+.content .textbox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textbox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    
+}
+
+.content .textbox h2 span {
+    color: pink;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textbox p {
+    color: #333;
+}
+
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px  20px;
+    background: pink;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.contact a img {
+    width: 40px;
+}
+
 .circle {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 380px;
     background: pink;
 }
-
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-}
-        .product-card {
-            width: 350px;
-            border: 1px solid #ccc;
-            margin: 10px;
-            padding: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            display: flex;
-            border-radius: 10px;
-        }
-    
-        .product-image {
-            width: 200px;
-            max-height: 200px;
-            object-fit: cover;
-        }
-    
-        .product-details {
-            flex: 1;
-            /* Membuat bagian ini mengisi sebanyak mungkin ruang yang tersedia */
-            padding: 10px;
-        }
-    
-        .product-title {
-            font-size: 18px;
-            margin-top: 0;
-        }
-    
-        .product-price {
-            font-size: 16px;
-            color: #e74c3c;
-        }
-    
-        .product-description {
-            font-size: 14px;
-            margin-top: 10px;
-        }
-    
-        .product-button {
-            background-color: pink;
-            color: #fff;
-            border: none;
-            padding: 8px 16px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-    
-        .product-button:hover {
-            background-color: rgb(235, 111, 132);
-        }
