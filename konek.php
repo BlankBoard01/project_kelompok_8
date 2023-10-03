@@ -6,9 +6,9 @@
 //GRANT ALL PRIVILEGES ON * . * TO 'new_user'@'localhost';
 //FLUSH PRIVILEGES;
 
+include ("koneksi.php");
 
-
-$link = mysqli_connect("localhost","donat","11sija2","kelompok8");
+//$link = mysqli_connect("localhost","donat","11sija2","kelompok8");
 
 // Check connection
 
@@ -19,7 +19,7 @@ echo
 
 $sql = "SELECT * FROM form";
 
-if($result = mysqli_query($link, $sql)){
+if($result = mysqli_query($koneksi, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo "<table>";
             echo "<tr>";
